@@ -7,20 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pizzas', function () {
+Route::get('/pizzas', 'PizzaController@index');
 
-    // get data from db
 
-     $pizzas = [
-       ['type' => "Hawaiian",'base' => "Cheesy Crust"],
-       ['type' => "Volcano",'base' => "Garlic Crust"],
-       ['type' => "Veg Supreme",'base' => "Thin & Crispy"]
-     ];
-
-  request('name');
-
-     return view('pizzas', [
-       'pizzas' => $pizzas,
-     ]);
-     return ['name' => 'veg pizzas', 'base' => 'classic'];
-});
+Route::get('/pizzas/{id}', 'PizzaController@show');
