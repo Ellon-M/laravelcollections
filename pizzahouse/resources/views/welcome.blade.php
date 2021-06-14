@@ -19,5 +19,10 @@
             <div class="header">
                 <img id="header-img" src="/img/pizza_maker2.jpg" alt="pizzahouse">
             </div>
+            <div class="message">
+
+                <p class="mssg"> {{ session('message')}} </p>
+                
+            </div>
           </div>
 @endsection

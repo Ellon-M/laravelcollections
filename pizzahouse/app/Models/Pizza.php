@@ -12,4 +12,8 @@ class Pizza extends Model
 
     // override table by:
     // protected $table = "table_name";
+
+    protected $casts = [
+      'toppings' => 'array'
+    ];
 }
