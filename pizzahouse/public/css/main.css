@@ -1,52 +1,64 @@
-
 body {
-    font-family: 'Nunito', sans-serif;
-    background-color:rgba(26,32,44);
-    color: red;
-    padding-bottom:60px;
-    margin:0;
-    padding:0;
-    height:100%;
+  font-family: "Nunito", sans-serif;
+  background-color: #1a202c;
+  color: red;
+  padding-bottom: 60px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-} */
-
 footer {
-      background: black;
-      padding: 20px;
-      text-align: center;
-      color: red;
-      position:absolute;
-      bottom:0;
-      width: 100
-      height: 60px;
-      width: 100%;
-      box-sizing: border-box;
+  background: black;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  position: absolute;
+  bottom: 0;
+  width: 100;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #header-img {
   margin-top: 30px;
-   height: 400px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 40%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 @media only screen and (max-width: 1000px) {
-  #header-img  {
-         width: 400px;
-         height: auto;
-    }
+  #header-img {
+    width: 400px;
+    height: auto;
+  }
 }
-
 @media only screen and (min-width: 1500px) {
-  #header-img  {
-         width: 600px;
-         height: 400px;
-    }
+  #header-img {
+    width: 600px;
+    height: 400px;
+  }
+}
+.pizza-index h1 {
+  margin-bottom: 40px;
+}
+.pizza-index .pizza-item {
+  margin: 10px 0;
+  padding: 12px;
+}
+.pizza-index .pizza-item img {
+  width: 60px;
+  display: inline-block;
+}
+.pizza-index .pizza-item h4 {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 20px;
+}
+.pizza-index .pizza-item h4 a {
+  color: #777;
+  text-decoration: none !important;
 }

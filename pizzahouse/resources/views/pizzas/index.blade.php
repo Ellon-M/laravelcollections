@@ -1,17 +1,15 @@
 @extends('layout')
 
 @section('content')
-      <h1>Pizzas</h1>
-      <div class="content">
-        <div class="pizza-list-title">
-          <h2>Pizza list</h2>
-        </div>
-
+<div class="pizza-index">
+    <h1>Pizza Orders</h1>
           @foreach($pizzas as $pizza)
-        <div>
-          {{ $pizza -> name }} - {{ $pizza -> type }} - {{ $pizza -> base }}
+        <div class="pizza-item">
+          <img src="/img/pizza.png" alt="pizza">
+          <h4>
+              <a href="/pizzas/{{ $pizza ->id }}">{{ $pizza-> name }}</a>
+            </h4>
         </div>
           @endforeach
-
         </div>
 @endsection
