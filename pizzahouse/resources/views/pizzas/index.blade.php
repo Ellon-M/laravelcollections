@@ -7,7 +7,7 @@
         <div class="pizza-item">
           <img src="/img/pizza.png" alt="pizza">
           <h4>
-              <a href="/pizzas/{{ $pizza ->id }}">{{ $pizza-> name }}</a>
+              <a href="{{ route('pizzas.show', $pizza -> id) }}">{{ $pizza-> name }}</a>
             </h4>
         </div>
           @endforeach

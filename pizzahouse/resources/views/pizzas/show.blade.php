@@ -11,7 +11,7 @@
       <li>{{ $topping }}</li>
       @endforeach
     </ul>
-    <form class="" action=""/pizzas/{{ $pizza -> id }}" method="POST">
+    <form class="" action="{{ route('pizzas.destroy', $pizza->id )}}" method="POST">
         @csrf
         @method('DELETE')
         <button name="button">Complete Order</button>
@@ -19,6 +19,6 @@
   </div>
 
   <div class="link-wrap">
-    <a href="/pizzas">Back to all pizzas</a>
+    <a href="{{ route('pizzas.index') }}">Back to all pizzas</a>
   </div>
 @endsection

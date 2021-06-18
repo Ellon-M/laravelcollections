@@ -22,7 +22,7 @@ footer {
 }
 
 #header-img {
-  margin-top: 30px;
+  margin-top: 70px;
   height: 400px;
   display: block;
   margin-left: auto;
@@ -30,18 +30,6 @@ footer {
   width: 40%;
 }
 
-@media only screen and (max-width: 1000px) {
-  #header-img {
-    width: 400px;
-    height: auto;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  #header-img {
-    width: 600px;
-    height: 400px;
-  }
-}
 .pizza-index h1 {
   margin-bottom: 40px;
 }
@@ -61,4 +49,17 @@ footer {
 .pizza-index .pizza-item h4 a {
   color: #777;
   text-decoration: none !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  #header-img {
+    width: 400px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  #header-img {
+    width: 600px;
+    height: 400px;
+  }
 }
