@@ -26,6 +26,7 @@ class PizzaController extends Controller
       ]);
    }
 
+   // GET request controller
    public function show($id){
 
      $pizza = Pizza::findOrFail($id);
@@ -33,7 +34,7 @@ class PizzaController extends Controller
       return view('pizzas.show', ['pizza' => $pizza]);
    }
 
-
+   // POST request controller
    public function create(){
       return view('pizzas.create');
    }
@@ -57,6 +58,8 @@ class PizzaController extends Controller
       return redirect('/') -> with('message', 'Thanks for your order');
    }
 
+
+   // DELETE request controller
    public function destroy($id) {
      $pizza = Pizza::findOrFail($id);
      $pizza -> delete();
